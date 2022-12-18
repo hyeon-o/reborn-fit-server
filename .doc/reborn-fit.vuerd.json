@@ -1,0 +1,686 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -184,
+    "scrollLeft": -182,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "FITNESS",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": true,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "USER",
+        "comment": "사용자 마스터 테이블",
+        "columns": [
+          {
+            "name": "user_no",
+            "comment": "사용자 번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 70.61181640625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a360d509-066f-478e-89d9-548f7666b51d"
+          },
+          {
+            "name": "level_no",
+            "comment": "레벨 번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "672b7bfd-bf09-4fb3-a65e-3de78ea83f03"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 134.6667,
+          "top": 165.5563,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 120
+        },
+        "visible": true,
+        "id": "ddf79234-c9f6-4463-ac5a-130de0bd8b60"
+      },
+      {
+        "name": "LEVEL",
+        "comment": "사용자 레벨 테이블",
+        "columns": [
+          {
+            "name": "level_no",
+            "comment": "레벌 번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9b0c8f7d-a97c-4fbb-b201-f1f39bb26b25"
+          },
+          {
+            "name": "level_nm",
+            "comment": "레벨 이름",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "eee0625d-dedd-46d1-bef7-09a5810ce753"
+          },
+          {
+            "name": "angle_btr",
+            "comment": "angle 각도 임계 범위",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4b114bd3-eb0e-4730-8567-d88aadf626f5"
+          },
+          {
+            "name": "count_btr",
+            "comment": "count 각도 임계 범위",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "aa6eff42-7f38-4539-82c0-775b1b39ce88"
+          },
+          {
+            "name": "circle_inc",
+            "comment": "기준 circle 시간 대비 증감 시간 (초)",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b5e9485d-6d0e-433e-9b98-398628053cff"
+          },
+          {
+            "name": "rest_inc",
+            "comment": "기준 rest 시간 대비 증감 시간 (초)",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "583923de-cf42-4e9e-9749-169e7c67ea98"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 606.8324,
+          "top": 217.5565,
+          "zIndex": 5,
+          "widthName": 60,
+          "widthComment": 113.2236328125
+        },
+        "visible": true,
+        "id": "c62ce5db-29db-4de1-bdd5-08a3a08b6efc"
+      },
+      {
+        "name": "EXERCISE",
+        "comment": "운동 마스터 테이블",
+        "columns": [
+          {
+            "name": "exercise_no",
+            "comment": "운동 번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.09716796875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b7f9aeca-b5b1-4eea-8085-ae77b4dafd00"
+          },
+          {
+            "name": "circle_cnt",
+            "comment": "circle 요구개수 ",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 91.55908203125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "39f93893-79b8-46b2-93cb-6b7633387e66"
+          },
+          {
+            "name": "rep_cnt",
+            "comment": "rep 요구개수",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 76.40087890625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "be70a274-7868-4201-a935-a4eb2cd21647"
+          },
+          {
+            "name": "circle_time",
+            "comment": "circle 요구시간 (초)",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.12451171875,
+              "widthComment": 113.21728515625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "81fa2482-2ebd-4521-9660-42ccbfd1c929"
+          },
+          {
+            "name": "rep_time",
+            "comment": "rep 요구시간 (초)",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 101.6708984375,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8d44edd9-980b-4027-a667-74bca663cf08"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 129.25,
+          "top": 323.5,
+          "zIndex": 2,
+          "widthName": 67.74267578125,
+          "widthComment": 113.2236328125
+        },
+        "visible": true,
+        "id": "7e2cfaad-8a22-45bb-b5d5-2cd8b4fcf677"
+      },
+      {
+        "name": "MOTION",
+        "comment": "운동 모션 테이블",
+        "columns": [
+          {
+            "name": "motion_no",
+            "comment": "모션 번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 62.708984375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "fc3f4ac0-ca8f-487e-92f2-2ffb0b372820"
+          },
+          {
+            "name": "exercise_no",
+            "comment": "모션을 포함하는 운동 번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 72.09716796875,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "8a168a10-2d57-438f-873f-0307d4c037de"
+          },
+          {
+            "name": "angle_no",
+            "comment": "모션이 포함하는 각도 번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 120,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "4d0ce2be-7e1d-46ae-b8c8-2cc144a6ef8a"
+          },
+          {
+            "name": "start",
+            "comment": "모션 시작 각도",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 87.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "71154774-f03c-45c7-aceb-f412c4e3e9c8"
+          },
+          {
+            "name": "end",
+            "comment": "모션 종료 각도",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 87.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "d7d81e17-9896-4fa4-8df9-a668fea667c9"
+          },
+          {
+            "name": "type",
+            "comment": "모션 타입",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "24a43da7-83de-45a9-a325-ef397c8d5adf"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 122.0834,
+          "top": 549.6386,
+          "zIndex": 73,
+          "widthName": 60,
+          "widthComment": 100.2236328125
+        },
+        "visible": true,
+        "id": "f785126d-2591-44d5-9838-b479ecbcfa9f"
+      },
+      {
+        "name": "ANGLE",
+        "comment": "각도 마스터 테이블",
+        "columns": [
+          {
+            "name": "angle_no",
+            "comment": "각도 번호",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b39c1a81-4ddb-4c0e-be91-b2b989a4c683"
+          },
+          {
+            "name": "part1",
+            "comment": "관절 시작 파트",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 87.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "27d0d639-24cf-4ddb-94ac-78b27f96d022"
+          },
+          {
+            "name": "part2",
+            "comment": "관절 중간 파트",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 87.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "54b42e96-8a8b-49fd-9d50-391be79f00a6"
+          },
+          {
+            "name": "part3",
+            "comment": "관절 종료 파트",
+            "dataType": "BIGINT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 87.2236328125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "afdb8e04-0346-40ae-a1fd-b76340897f84"
+          },
+          {
+            "name": "desc",
+            "comment": "설명",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "51c589b4-32ee-4fea-9d71-7e334c49c314"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 620.5,
+          "top": 549.5,
+          "zIndex": 54,
+          "widthName": 60,
+          "widthComment": 113.2236328125
+        },
+        "visible": true,
+        "id": "8ccc4928-4eaa-4704-92b9-e9537e80fcc6"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": []
+  }
+}
