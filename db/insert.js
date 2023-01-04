@@ -37,8 +37,8 @@ const insertSQL = [
     `,
     // EXERCISE
     `
-    INSERT INTO EXERCISE (circle_cnt, rep_cnt, circle_time, rep_time)
-    VALUES (2, 10, 10, 3);
+    INSERT INTO EXERCISE (circle_cnt, rep_cnt, circle_time, rep_time, type)
+    VALUES (2, 3, 10, 3, 'T');
     `,
     // MOTION
     `

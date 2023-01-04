@@ -19,7 +19,8 @@ const createSQL = [
     circle_cnt  INTEGER NOT NULL,     -- circle 요구개수 
     rep_cnt     INTEGER NOT NULL,     -- rep 요구개수
     circle_time INTEGER NOT NULL,     -- circle 요구시간 (초)
-    rep_time    INTEGER NOT NULL      -- rep 요구시간 (초)
+    rep_time    INTEGER NOT NULL,     -- rep 요구시간 (초)
+    type        TEXT    NOT NULL      -- 운동 타입
     );
     `,
     `

@@ -3,9 +3,9 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -184,
-    "scrollLeft": -182,
-    "zoomLevel": 0.9,
+    "scrollTop": 0,
+    "scrollLeft": -23.33333333333334,
+    "zoomLevel": 1,
     "show": {
       "tableComment": true,
       "columnComment": true,
@@ -251,7 +251,7 @@
           "active": false,
           "left": 606.8324,
           "top": 217.5565,
-          "zIndex": 5,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 113.2236328125
         },
@@ -376,13 +376,36 @@
               "widthDefault": 60
             },
             "id": "8d44edd9-980b-4027-a667-74bca663cf08"
+          },
+          {
+            "name": "type",
+            "comment": "운동 타입",
+            "dataType": "TEXT",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0818c19a-7d98-42f7-973f-5cc59da7378c"
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 129.25,
           "top": 323.5,
-          "zIndex": 2,
+          "zIndex": 18,
           "widthName": 67.74267578125,
           "widthComment": 113.2236328125
         },
@@ -536,7 +559,7 @@
           "active": false,
           "left": 122.0834,
           "top": 549.6386,
-          "zIndex": 73,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 100.2236328125
         },
@@ -667,7 +690,7 @@
           "active": false,
           "left": 620.5,
           "top": 549.5,
-          "zIndex": 54,
+          "zIndex": 5,
           "widthName": 60,
           "widthComment": 113.2236328125
         },
