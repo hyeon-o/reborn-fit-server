@@ -38,16 +38,16 @@ const insertSQL = [
     // EXERCISE
     `
     INSERT INTO EXERCISE (circle_cnt, rep_cnt, circle_time, rep_time, type)
-    VALUES (2, 3, 10, 3, 'T');
+    VALUES (2, 3, 10, 3, 'C');
     `,
     // MOTION
     `
-    INSERT INTO MOTION (exercise_no, angle_no, start, end, type)
-    VALUES (1, 1, 170, 90, 'F');
+    INSERT INTO MOTION (exercise_no, angle_no, start, end)
+    VALUES (1, 1, 170, 90);
     `,
     `
-    INSERT INTO MOTION (exercise_no, angle_no, start, end, type)
-    VALUES (1, 2, 170, 90, 'F');
+    INSERT INTO MOTION (exercise_no, angle_no, start, end)
+    VALUES (1, 2, 170, 90);
     `,
 ]
 

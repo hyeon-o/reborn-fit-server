@@ -43,8 +43,7 @@ const createSQL = [
     exercise_no INTEGER NOT NULL,       -- 모션을 포함하는 운동 번호
     angle_no    INTEGER NOT NULL,       -- 모션이 포함하는 각도 번호
     start       INTEGER NOT NULL,       -- 모션 시작 각도
-    end         INTEGER NOT NULL,       -- 모션 종료 각도
-    type        TEXT    NOT NULL        -- 모션 타입
+    end         INTEGER NOT NULL       -- 모션 종료 각도
     );
     `,
     `

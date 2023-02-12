@@ -3,7 +3,7 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": 0,
+    "scrollTop": -0.8,
     "scrollLeft": -23.33333333333334,
     "zoomLevel": 1,
     "show": {
@@ -251,7 +251,7 @@
           "active": false,
           "left": 606.8324,
           "top": 217.5565,
-          "zIndex": 3,
+          "zIndex": 2,
           "widthName": 60,
           "widthComment": 113.2236328125
         },
@@ -402,10 +402,10 @@
           }
         ],
         "ui": {
-          "active": true,
+          "active": false,
           "left": 129.25,
           "top": 323.5,
-          "zIndex": 18,
+          "zIndex": 5,
           "widthName": 67.74267578125,
           "widthComment": 113.2236328125
         },
@@ -530,36 +530,13 @@
               "widthDefault": 60
             },
             "id": "d7d81e17-9896-4fa4-8df9-a668fea667c9"
-          },
-          {
-            "name": "type",
-            "comment": "모션 타입",
-            "dataType": "TEXT",
-            "default": "",
-            "option": {
-              "autoIncrement": false,
-              "primaryKey": false,
-              "unique": false,
-              "notNull": true
-            },
-            "ui": {
-              "active": false,
-              "pk": false,
-              "fk": false,
-              "pfk": false,
-              "widthName": 60,
-              "widthComment": 60,
-              "widthDataType": 60,
-              "widthDefault": 60
-            },
-            "id": "24a43da7-83de-45a9-a325-ef397c8d5adf"
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 122.0834,
           "top": 549.6386,
-          "zIndex": 4,
+          "zIndex": 7,
           "widthName": 60,
           "widthComment": 100.2236328125
         },
@@ -690,7 +667,7 @@
           "active": false,
           "left": 620.5,
           "top": 549.5,
-          "zIndex": 5,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 113.2236328125
         },
