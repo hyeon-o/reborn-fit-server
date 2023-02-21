@@ -225,7 +225,7 @@
           },
           {
             "name": "rep_time",
-            "comment": "rep의 반복 시간 (초)",
+            "comment": "rep의 유지 시간 (초)",
             "dataType": "INTEGER",
             "default": "",
             "option": {
@@ -271,10 +271,10 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 545.0547,
           "top": 210.1493,
-          "zIndex": 156,
+          "zIndex": 159,
           "widthName": 60,
           "widthComment": 113.2236328125
         },

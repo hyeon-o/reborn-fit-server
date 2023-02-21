@@ -18,7 +18,7 @@ const createSQL = [
     count_btr   INTEGER NOT NULL,      -- count 각도 임계 범위
     assess_btr  INTEGER NOT NULL,      -- assess 각도 임계 범위
     rep_cnt     INTEGER NOT NULL,      -- rep의 반복 횟수 (개)
-    rep_time    INTEGER NOT NULL,      -- rep의 반복 시간 (초)
+    rep_time    INTEGER NOT NULL,      -- rep의 유지 시간 (초)
     rest_time   INTEGER NOT NULL       -- rep 간 휴식 시간 (초)
     );
     `,
