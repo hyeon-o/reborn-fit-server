@@ -43,19 +43,19 @@ const insertSQL = [
     // MOTION
     `
     INSERT INTO MOTION (exercise_no, angle_no, start, end)
-    VALUES (1, 1, 170, 90);
+    VALUES (1, 21, 170, 90);
     `,
     `
     INSERT INTO MOTION (exercise_no, angle_no, start, end)
-    VALUES (1, 2, 170, 90);
+    VALUES (1, 22, 170, 90);
     `,
     `
     INSERT INTO MOTION (exercise_no, angle_no, start, end)
-    VALUES (2, 1, 170, 90);
+    VALUES (2, 21, 170, 90);
     `,
     `
     INSERT INTO MOTION (exercise_no, angle_no, start, end)
-    VALUES (2, 2, 170, 90);
+    VALUES (2, 22, 170, 90);
     `,
 ]
 
