@@ -1,44 +1,44 @@
 
 const insertSQL = [
     // LEVEL
+    // `
+    // INSERT INTO LEVEL (level_nm, angle_btr, count_btr, rep_cnt, rep_time, rest_time)
+    // VALUES ('초급자', 15, 30, 12, 12, 12);
+    // `,
+    // `
+    // INSERT INTO LEVEL (level_nm, angle_btr, count_btr, rep_cnt, rep_time, rest_time)
+    // VALUES ('중급자', 10, 20, 15, 21, 21);
+    // `,
+    // `
+    // INSERT INTO LEVEL (level_nm, angle_btr, count_btr, rep_cnt, rep_time, rest_time)
+    // VALUES ('고급자', 5, 10, 21, 30, 30);
+    // `,
+    // 테스트용 더미데이터
     `
-    INSERT INTO LEVEL (level_nm, angle_btr, count_btr, circle_inc, rest_inc)
-    VALUES ('초급자', 25, 30, 10, 10);
+    INSERT INTO LEVEL (level_nm, count_btr, assess_btr, rep_cnt, rep_time, rest_time)
+    VALUES ('초급자', 15, 7, 2, 2, 2);
     `,
     `
-    INSERT INTO LEVEL (level_nm, angle_btr, count_btr, circle_inc, rest_inc)
-    VALUES ('중급자', 15, 20, 0, 0);
+    INSERT INTO LEVEL (level_nm, count_btr, assess_btr, rep_cnt, rep_time, rest_time)
+    VALUES ('중급자', 10, 5, 3, 3, 3);
     `,
     `
-    INSERT INTO LEVEL (level_nm, angle_btr, count_btr, circle_inc, rest_inc)
-    VALUES ('고급자', 5, 10, -5, -5);
+    INSERT INTO LEVEL (level_nm, count_btr, assess_btr, rep_cnt, rep_time, rest_time)
+    VALUES ('고급자', 5, 2, 4, 4, 4);
     `,
     // USER
     `
     INSERT INTO USER (user_nm, level_no)
     VALUES ('이준호', 1);
     `,
-    // ANGLE
-    `
-    INSERT INTO ANGLE (part1, part2, part3, desc)
-    VALUES (11, 13, 15, '왼쪽 무릎');
-    `,
-    `
-    INSERT INTO ANGLE (part1, part2, part3, desc)
-    VALUES (12, 14, 16, '오른쪽 무릎');
-    `,
-    `
-    INSERT INTO ANGLE (part1, part2, part3, desc)
-    VALUES (12, 11, 13, '왼쪽 엉덩이 아래');
-    `,
-    `
-    INSERT INTO ANGLE (part1, part2, part3, desc)
-    VALUES (11, 12, 14, '오른쪽 엉덩이 아래');
-    `,
     // EXERCISE
     `
-    INSERT INTO EXERCISE (circle_cnt, rep_cnt, circle_time, rep_time, type)
-    VALUES (2, 3, 10, 3, 'C');
+    INSERT INTO EXERCISE (exercise_no, type, circle_cnt)
+    VALUES (1, 'C', 4);
+    `,
+    `
+    INSERT INTO EXERCISE (exercise_no, type, circle_cnt)
+    VALUES (2, 'T', 4);
     `,
     // MOTION
     `
@@ -48,6 +48,14 @@ const insertSQL = [
     `
     INSERT INTO MOTION (exercise_no, angle_no, start, end)
     VALUES (1, 2, 170, 90);
+    `,
+    `
+    INSERT INTO MOTION (exercise_no, angle_no, start, end)
+    VALUES (2, 1, 170, 90);
+    `,
+    `
+    INSERT INTO MOTION (exercise_no, angle_no, start, end)
+    VALUES (2, 2, 170, 90);
     `,
 ]
 
